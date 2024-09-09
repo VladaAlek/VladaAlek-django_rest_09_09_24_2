@@ -1,3 +1,7 @@
+from django.contrib import admin
+from django.urls import path
+from drinks import views
+
 """
 URL configuration for drinks project.
 
@@ -19,4 +23,5 @@ from django.urls import path
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('drinks/', views.drink_list),
 ]

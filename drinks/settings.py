@@ -37,8 +37,13 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'drinks',
+    'rest_framework',
 ]
 
+CSRF_TRUSTED_ORIGINS = [
+    'https://8000-vladaalek-vladaalekdjan-3mzsdcl1sc3.ws-eu116.gitpod.io',
+]
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
